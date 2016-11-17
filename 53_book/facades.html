@@ -1,0 +1,729 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Facades · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="contracts" />
+    
+    
+    <link rel="prev" href="providers.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Getting Started
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="configuration.html">
+            
+                <a href="configuration.html">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="structure.html">
+            
+                <a href="structure.html">
+            
+                    
+                    Directory Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="errors.html">
+            
+                <a href="errors.html">
+            
+                    
+                    Errors & Logging
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Dev Environments
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="homestead.html">
+            
+                <a href="homestead.html">
+            
+                    
+                    Homestead
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="valet.html">
+            
+                <a href="valet.html">
+            
+                    
+                    Valet
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Core Concepts
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="container.html">
+            
+                <a href="container.html">
+            
+                    
+                    Service Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="providers.html">
+            
+                <a href="providers.html">
+            
+                    
+                    Service Providers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="facades.html">
+            
+                <a href="facades.html">
+            
+                    
+                    Facades
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="contracts">
+            
+                <span>
+            
+                    
+                    Contracts
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Facades</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="facades">Facades</h1>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#when-to-use-facades">When To Use Facades</a><ul>
+<li><a href="#facades-vs-dependency-injection">Facades Vs. Dependency Injection</a></li>
+<li><a href="#facades-vs-helper-functions">Facades Vs. Helper Functions</a></li>
+</ul>
+</li>
+<li><a href="#how-facades-work">How Facades Work</a></li>
+<li><a href="#facade-class-reference">Facade Class Reference</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2 id="introduction">Introduction</h2>
+<p>Facades provide a &quot;static&quot; interface to classes that are available in the application&apos;s <a href="docs/container">service container</a>. Laravel ships with many facades which provide access to almost all of Laravel&apos;s features. Laravel facades serve as &quot;static proxies&quot; to underlying classes in the service container, providing the benefit of a terse, expressive syntax while maintaining more testability and flexibility than traditional static methods.</p>
+<p>All of Laravel&apos;s facades are defined in the <code>Illuminate\Support\Facades</code> namespace. So, we can easily access a facade like so:</p>
+<pre><code>use Illuminate\Support\Facades\Cache;
+
+Route::get(&apos;/cache&apos;, function () {
+    return Cache::get(&apos;key&apos;);
+});
+</code></pre><p>Throughout the Laravel documentation, many of the examples will use facades to demonstrate various features of the framework.</p>
+<p><a name="when-to-use-facades"></a></p>
+<h2 id="when-to-use-facades">When To Use Facades</h2>
+<p>Facades have many benefits. They provide a terse, memorable syntax that allows you to use Laravel&apos;s features without remembering long class names that must be injected or configured manually. Furthermore, because of their unique usage of PHP&apos;s dynamic methods, they are easy to test.</p>
+<p>However, some care must be taken when using facades. The primary danger of facades is class scope creep. Since facades are so easy to use and do not require injection, it can be easy to let your classes continue to grow and use many facades in a single class. Using dependency injection, this potential is mitigated by the visual feedback a large constructor gives you that your class is growing too large. So, when using facades, pay special attention to the size of your class so that it&apos;s scope of responsibility stays narrow.</p>
+<blockquote>
+<p>{tip} When building a third-party package that interacts with Laravel, it&apos;s better to inject <a href="docs/contracts">Laravel contracts</a> instead of using facades. Since packages are built outside of Laravel itself, you will not have access to Laravel&apos;s facade testing helpers.</p>
+</blockquote>
+<p><a name="facades-vs-dependency-injection"></a></p>
+<h3 id="facades-vs-dependency-injection">Facades Vs. Dependency Injection</h3>
+<p>One of the primary benefits of dependency injection is the ability to swap implementations of the injected class. This is useful during testing since you can inject a mock or stub and assert that various methods were called on the stub.</p>
+<p>Typically, it would not be possible to mock or stub a truly static class method. However, since facades use dynamic methods to proxy method calls to objects resolved from the service container, we actually can test facades just as we would test an injected class instance. For example, given the following route:</p>
+<pre><code>use Illuminate\Support\Facades\Cache;
+
+Route::get(&apos;/cache&apos;, function () {
+    return Cache::get(&apos;key&apos;);
+});
+</code></pre><p>We can write the following test to verify that the <code>Cache::get</code> method was called with the argument we expected:</p>
+<pre><code>use Illuminate\Support\Facades\Cache;
+
+/**
+ * A basic functional test example.
+ *
+ * @return void
+ */
+public function testBasicExample()
+{
+    Cache::shouldReceive(&apos;get&apos;)
+         -&gt;with(&apos;key&apos;)
+         -&gt;andReturn(&apos;value&apos;);
+
+    $this-&gt;visit(&apos;/cache&apos;)
+         -&gt;see(&apos;value&apos;);
+}
+</code></pre><p><a name="facades-vs-helper-functions"></a></p>
+<h3 id="facades-vs-helper-functions">Facades Vs. Helper Functions</h3>
+<p>In addition to facades, Laravel includes a variety of &quot;helper&quot; functions which can perform common tasks like generating views, firing events, dispatching jobs, or sending HTTP responses. Many of these helper functions perform the same function as a corresponding facade. For example, this facade call and helper call are equivalent:</p>
+<pre><code>return View::make(&apos;profile&apos;);
+
+return view(&apos;profile&apos;);
+</code></pre><p>There is absolutely no practical difference between facades and helper functions. When using helper functions, you may still test them exactly as you would the corresponding facade. For example, given the following route:</p>
+<pre><code>Route::get(&apos;/cache&apos;, function () {
+    return cache(&apos;key&apos;);
+});
+</code></pre><p>Under the hood, the <code>cache</code> helper is going to call the <code>get</code> method on the class underlying the <code>Cache</code> facade. So, even though we are using the helper function, we can write the following test to verify that the method was called with the argument we expected:</p>
+<pre><code>use Illuminate\Support\Facades\Cache;
+
+/**
+ * A basic functional test example.
+ *
+ * @return void
+ */
+public function testBasicExample()
+{
+    Cache::shouldReceive(&apos;get&apos;)
+         -&gt;with(&apos;key&apos;)
+         -&gt;andReturn(&apos;value&apos;);
+
+    $this-&gt;visit(&apos;/cache&apos;)
+         -&gt;see(&apos;value&apos;);
+}
+</code></pre><p><a name="how-facades-work"></a></p>
+<h2 id="how-facades-work">How Facades Work</h2>
+<p>In a Laravel application, a facade is a class that provides access to an object from the container. The machinery that makes this work is in the <code>Facade</code> class. Laravel&apos;s facades, and any custom facades you create, will extend the base <code>Illuminate\Support\Facades\Facade</code> class.</p>
+<p>The <code>Facade</code> base class makes use of the <code>__callStatic()</code> magic-method to defer calls from your facade to an object resolved from the container. In the example below, a call is made to the Laravel cache system. By glancing at this code, one might assume that the static method <code>get</code> is being called on the <code>Cache</code> class:</p>
+<pre><code>&lt;?php
+
+namespace App\Http\Controllers;
+
+use Cache;
+use App\Http\Controllers\Controller;
+
+class UserController extends Controller
+{
+    /**
+     * Show the profile for the given user.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function showProfile($id)
+    {
+        $user = Cache::get(&apos;user:&apos;.$id);
+
+        return view(&apos;profile&apos;, [&apos;user&apos; =&gt; $user]);
+    }
+}
+</code></pre><p>Notice that near the top of the file we are &quot;importing&quot; the <code>Cache</code> facade. This facade serves as a proxy to accessing the underlying implementation of the <code>Illuminate\Contracts\Cache\Factory</code> interface. Any calls we make using the facade will be passed to the underlying instance of Laravel&apos;s cache service.</p>
+<p>If we look at that <code>Illuminate\Support\Facades\Cache</code> class, you&apos;ll see that there is no static method <code>get</code>:</p>
+<pre><code>class Cache extends Facade
+{
+    /**
+     * Get the registered name of the component.
+     *
+     * @return string
+     */
+    protected static function getFacadeAccessor() { return &apos;cache&apos;; }
+}
+</code></pre><p>Instead, the <code>Cache</code> facade extends the base <code>Facade</code> class and defines the method <code>getFacadeAccessor()</code>. This method&apos;s job is to return the name of a service container binding. When a user references any static method on the <code>Cache</code> facade, Laravel resolves the <code>cache</code> binding from the <a href="docs/container">service container</a> and runs the requested method (in this case, <code>get</code>) against that object.</p>
+<p><a name="facade-class-reference"></a></p>
+<h2 id="facade-class-reference">Facade Class Reference</h2>
+<p>Below you will find every facade and its underlying class. This is a useful tool for quickly digging into the API documentation for a given facade root. The <a href="docs/container">service container binding</a> key is also included where applicable.</p>
+<table>
+<thead>
+<tr>
+<th>Facade</th>
+<th>Class</th>
+<th>Service Container Binding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>App</td>
+<td><a href="http://laravel.com/api//Illuminate/Foundation/Application.html" target="_blank">Illuminate\Foundation\Application</a></td>
+<td><code>app</code></td>
+</tr>
+<tr>
+<td>Artisan</td>
+<td><a href="http://laravel.com/api//Illuminate/Contracts/Console/Kernel.html" target="_blank">Illuminate\Contracts\Console\Kernel</a></td>
+<td><code>artisan</code></td>
+</tr>
+<tr>
+<td>Auth</td>
+<td><a href="http://laravel.com/api//Illuminate/Auth/AuthManager.html" target="_blank">Illuminate\Auth\AuthManager</a></td>
+<td><code>auth</code></td>
+</tr>
+<tr>
+<td>Blade</td>
+<td><a href="http://laravel.com/api//Illuminate/View/Compilers/BladeCompiler.html" target="_blank">Illuminate\View\Compilers\BladeCompiler</a></td>
+<td><code>blade.compiler</code></td>
+</tr>
+<tr>
+<td>Bus</td>
+<td><a href="http://laravel.com/api//Illuminate/Contracts/Bus/Dispatcher.html" target="_blank">Illuminate\Contracts\Bus\Dispatcher</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Cache</td>
+<td><a href="http://laravel.com/api//Illuminate/Cache/Repository.html" target="_blank">Illuminate\Cache\Repository</a></td>
+<td><code>cache</code></td>
+</tr>
+<tr>
+<td>Config</td>
+<td><a href="http://laravel.com/api//Illuminate/Config/Repository.html" target="_blank">Illuminate\Config\Repository</a></td>
+<td><code>config</code></td>
+</tr>
+<tr>
+<td>Cookie</td>
+<td><a href="http://laravel.com/api//Illuminate/Cookie/CookieJar.html" target="_blank">Illuminate\Cookie\CookieJar</a></td>
+<td><code>cookie</code></td>
+</tr>
+<tr>
+<td>Crypt</td>
+<td><a href="http://laravel.com/api//Illuminate/Encryption/Encrypter.html" target="_blank">Illuminate\Encryption\Encrypter</a></td>
+<td><code>encrypter</code></td>
+</tr>
+<tr>
+<td>DB</td>
+<td><a href="http://laravel.com/api//Illuminate/Database/DatabaseManager.html" target="_blank">Illuminate\Database\DatabaseManager</a></td>
+<td><code>db</code></td>
+</tr>
+<tr>
+<td>DB (Instance)</td>
+<td><a href="http://laravel.com/api//Illuminate/Database/Connection.html" target="_blank">Illuminate\Database\Connection</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Event</td>
+<td><a href="http://laravel.com/api//Illuminate/Events/Dispatcher.html" target="_blank">Illuminate\Events\Dispatcher</a></td>
+<td><code>events</code></td>
+</tr>
+<tr>
+<td>File</td>
+<td><a href="http://laravel.com/api//Illuminate/Filesystem/Filesystem.html" target="_blank">Illuminate\Filesystem\Filesystem</a></td>
+<td><code>files</code></td>
+</tr>
+<tr>
+<td>Gate</td>
+<td><a href="http://laravel.com/api/5.1/Illuminate/Contracts/Auth/Access/Gate.html" target="_blank">Illuminate\Contracts\Auth\Access\Gate</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Hash</td>
+<td><a href="http://laravel.com/api//Illuminate/Contracts/Hashing/Hasher.html" target="_blank">Illuminate\Contracts\Hashing\Hasher</a></td>
+<td><code>hash</code></td>
+</tr>
+<tr>
+<td>Lang</td>
+<td><a href="http://laravel.com/api//Illuminate/Translation/Translator.html" target="_blank">Illuminate\Translation\Translator</a></td>
+<td><code>translator</code></td>
+</tr>
+<tr>
+<td>Log</td>
+<td><a href="http://laravel.com/api//Illuminate/Log/Writer.html" target="_blank">Illuminate\Log\Writer</a></td>
+<td><code>log</code></td>
+</tr>
+<tr>
+<td>Mail</td>
+<td><a href="http://laravel.com/api//Illuminate/Mail/Mailer.html" target="_blank">Illuminate\Mail\Mailer</a></td>
+<td><code>mailer</code></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><a href="http://laravel.com/api//Illuminate/Auth/Passwords/PasswordBroker.html" target="_blank">Illuminate\Auth\Passwords\PasswordBroker</a></td>
+<td><code>auth.password</code></td>
+</tr>
+<tr>
+<td>Queue</td>
+<td><a href="http://laravel.com/api//Illuminate/Queue/QueueManager.html" target="_blank">Illuminate\Queue\QueueManager</a></td>
+<td><code>queue</code></td>
+</tr>
+<tr>
+<td>Queue (Instance)</td>
+<td><a href="http://laravel.com/api//Illuminate/Contracts/Queue/Queue.html" target="_blank">Illuminate\Contracts\Queue\Queue</a></td>
+<td><code>queue</code></td>
+</tr>
+<tr>
+<td>Queue (Base Class)</td>
+<td><a href="http://laravel.com/api//Illuminate/Queue/Queue.html" target="_blank">Illuminate\Queue\Queue</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Redirect</td>
+<td><a href="http://laravel.com/api//Illuminate/Routing/Redirector.html" target="_blank">Illuminate\Routing\Redirector</a></td>
+<td><code>redirect</code></td>
+</tr>
+<tr>
+<td>Redis</td>
+<td><a href="http://laravel.com/api//Illuminate/Redis/Database.html" target="_blank">Illuminate\Redis\Database</a></td>
+<td><code>redis</code></td>
+</tr>
+<tr>
+<td>Request</td>
+<td><a href="http://laravel.com/api//Illuminate/Http/Request.html" target="_blank">Illuminate\Http\Request</a></td>
+<td><code>request</code></td>
+</tr>
+<tr>
+<td>Response</td>
+<td><a href="http://laravel.com/api//Illuminate/Contracts/Routing/ResponseFactory.html" target="_blank">Illuminate\Contracts\Routing\ResponseFactory</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Route</td>
+<td><a href="http://laravel.com/api//Illuminate/Routing/Router.html" target="_blank">Illuminate\Routing\Router</a></td>
+<td><code>router</code></td>
+</tr>
+<tr>
+<td>Schema</td>
+<td><a href="http://laravel.com/api//Illuminate/Database/Schema/Blueprint.html" target="_blank">Illuminate\Database\Schema\Blueprint</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Session</td>
+<td><a href="http://laravel.com/api//Illuminate/Session/SessionManager.html" target="_blank">Illuminate\Session\SessionManager</a></td>
+<td><code>session</code></td>
+</tr>
+<tr>
+<td>Session (Instance)</td>
+<td><a href="http://laravel.com/api//Illuminate/Session/Store.html" target="_blank">Illuminate\Session\Store</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Storage</td>
+<td><a href="http://laravel.com/api//Illuminate/Contracts/Filesystem/Factory.html" target="_blank">Illuminate\Contracts\Filesystem\Factory</a></td>
+<td><code>filesystem</code></td>
+</tr>
+<tr>
+<td>URL</td>
+<td><a href="http://laravel.com/api//Illuminate/Routing/UrlGenerator.html" target="_blank">Illuminate\Routing\UrlGenerator</a></td>
+<td><code>url</code></td>
+</tr>
+<tr>
+<td>Validator</td>
+<td><a href="http://laravel.com/api//Illuminate/Validation/Factory.html" target="_blank">Illuminate\Validation\Factory</a></td>
+<td><code>validator</code></td>
+</tr>
+<tr>
+<td>Validator (Instance)</td>
+<td><a href="http://laravel.com/api//Illuminate/Validation/Validator.html" target="_blank">Illuminate\Validation\Validator</a></td>
+<td></td>
+</tr>
+<tr>
+<td>View</td>
+<td><a href="http://laravel.com/api//Illuminate/View/Factory.html" target="_blank">Illuminate\View\Factory</a></td>
+<td><code>view</code></td>
+</tr>
+<tr>
+<td>View (Instance)</td>
+<td><a href="http://laravel.com/api//Illuminate/View/View.html" target="_blank">Illuminate\View\View</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="providers.html" class="navigation navigation-prev " aria-label="Previous page: Service Providers">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="contracts" class="navigation navigation-next " aria-label="Next page: Contracts">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Facades","level":"1.4.3","depth":2,"next":{"title":"Contracts","level":"1.4.4","depth":2,"path":"contracts","ref":"contracts","articles":[]},"previous":{"title":"Service Providers","level":"1.4.2","depth":2,"path":"providers.md","ref":"providers.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"facades.md","mtime":"2016-11-17T10:12:59.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-17T10:52:45.694Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
