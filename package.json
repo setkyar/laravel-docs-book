@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "deploy:42": "rm -rf 42_book && mkdir 42_book && cd 4.2 && git pull origin 4.2 && npm run docs:build && mv _book/* ../42_book/",
-    "deploy:53": "rm -rf 53_book && mkdir 53_book && cd 5.3 && git pull origin 5.3 && npm run docs:build && mv _book/* ../53_book/",
-    "deploy:54": "rm -rf 54_book && mkdir 54_book && cd 5.4 && git pull origin 5.4 && npm run docs:build && mv _book/* ../54_book/",
-    "deploy": "npm run deploy:42 && npm run deploy:53 && npm run deploy:54 && git checkout gh-pages && git add . && git commit -am 'Update docs' && git push origin gh-pages"
+    "deploy:55": "rm -rf 55_book && mkdir 55_book && cd 5.5 && git pull origin 5.5 && npm run docs:build && mv _book/* ../55_book/",
+    "deploy": "npm run deploy:42 && npm run deploy:55 && git checkout gh-pages && git add . && git commit -am 'Update docs' && git push origin gh-pages"
   },
   "repository": {
     "type": "git",
